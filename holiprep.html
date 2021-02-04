@@ -4,7 +4,12 @@
 <head>
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Holiprep UX Case Study</title>
   <script src="https://kit.fontawesome.com/d5135120e2.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +17,7 @@
 <body>
   <header>
     <div class="container">
-      <img src="https://i.ibb.co/dMmmRLJ/REUX-2x.png" alt="REUX">
+      <img src="img/logo.png" alt="REUX">
       <nav>
         <ul>
           <li><a href="index.html">Portfolio</a></li>
@@ -25,26 +30,31 @@
   </header>
   <main>
     <div class="section">
-      <h1>Holiprep UX Case Study</h1>
-      <picture>
-        <source srcset="https://i.ibb.co/vjp5G7R/Hero-screen.png" media="(max-width: 767px)">
-        <img src="https://i.ibb.co/c8YvtxV/Hero-screen-2x.png" alt="Holiprep case study cover photo">
-      </picture>
+      <div class="container">
+        <picture>
+          <source srcset="img/hp-img/hero.png" media="(max-width: 767px)">
+          <img src="img/hp-img/hero@2x.png" alt="Holiprep case study cover photo">
+        </picture>
+      </div>
     </div>
     <div class="section">
       <div class="container">
-        <p>How might we design a mobile app that empowers people to learn a new language?</p>
+        <span>How might we design a mobile app that empowers people to learn a new language?</span>
         <h2>Project Overview</h2>
         <div class="row">
           <div class="column">
             <p>Holiprep is a native mobile app that arms travellers with a basic survival toolkit for communicating whilst on holiday. Holiprep was created as part of the UX Design intensive course program at CareerFoundry.</p>
           </div>
           <div class="column">
-            <p>Duration: One month.</p>
-            <p>My Roles: UX Researcher, UX Designer, UI Designer.</p>
-            <p>Tools: Marvel POP App, Sketch, Photoshop.</p>
+            <p><span>Duration:</span> One month.</p>
+            <p><span>My Roles:</span> UX Researcher, UX Designer, UI Designer.</p>
+            <p><span>Tools:</span> Marvel POP App, Sketch, Photoshop.</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
         <h2>Methodology</h2>
         <p>In order to stay focused on the needs of my users when designing the solution, I utilised the Design Thinking Process:</p>
         <picture>
@@ -55,29 +65,37 @@
     </div>
     <div class="section">
       <div class="container">
-        <h5>EMPATHIZE</h5>
+      <span>EMPATHIZE</span>
         <h2>GETTING TO KNOW THE PROBLEM SPACE</h2>
         <p>Without pre-existing insights into the market, I conducted an analysis of three competitor apps.</p>
         <p>The main goal was to understand what solutions were currently being offered by competitors, and their pros and cons, in order to design a solution that exceeded them.</p>
-      </div>
-      <div class="carousel container">
         <div class="carousel slides">
           <picture>
             <source srcset="https://i.ibb.co/xg4Jj94/worddive.png" media="(max-width: 767px)">
             <img src="https://i.ibb.co/XbFXXBr/worddive-2x.png" alt="Word Dive competitor analysis">
           </picture>
+        </div>
+        <div class="carousel slides">
           <picture>
             <source srcset="https://i.ibb.co/bQr2dJR/flash-words.png" media="(max-width: 767px)">
             <img src="https://i.ibb.co/Z10hH7d/flash-words-2x.png" alt="Flash Words competitor analysis">
           </picture>
+        </div>
+        <div class="carousel slides">
           <picture>
             <source srcset="https://i.ibb.co/m8Mmn6c/vocabulary.png" media="(max-width: 767px)">
             <img src="https://i.ibb.co/s652z3d/vocabulary-2x.png" alt="Vocabulary competitor analysis">
           </picture>
         </div>
-        <button id="prevbtn">Prev</button>
-        <button id="nextbtn">Next</button>
+        <a class="prev" onclick="plusslides(-1)">&#10094;</a>
+        <a class="next" onclick="plusslides(1)">&#10095;</a>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentslide(1)"></span>
+          <span class="dot" onclick="currentslide(2)"></span>
+          <span class="dot" onclick="currentslide(3)"></span>
+        </div>
       </div>
+    </div>
       <div class="container">
         <h3>Early Insights</h3>
         <div class="row">
@@ -99,36 +117,42 @@
         <p>I also conducted user research to gather qualitative information directly from the potential users of the app.</p>
         <div class="row">
           <div class="column">
-            <div class="carousel container">
               <div class="carousel slides">
                 <picture>
-                  <source srcset="https://i.ibb.co/pzhdmX7/lucys-interview.png" media="(max-width: 767px)">
-                  <img src="https://i.ibb.co/n69pJXc/lucys-interview-2x" alt="Lucy interview notes">
+                  <source srcset="img/hp-img/lucy-interview.png" media="(max-width: 767px)">
+                  <img src="img/hp-img/lucy-interview@2x.png" alt="Lucy interview notes">
                 </picture>
+              </div>
+              <div class="carousel slides">
                 <picture>
-                  <source srcset="https://i.ibb.co/qNNGq4m/benedicts-interview.png" media="(max-width: 767px)">
-                  <img src="https://i.ibb.co/Z10hH7d58bk8hk/benedicts-interview-2x.png" alt="Benedict interview notes">
+                  <source srcset="img/hp-img/benedict-interview.png" media="(max-width: 767px)">
+                  <img src="img/hp-img/benedict-interview@2x.png" alt="Benedict interview notes">
                 </picture>
+              </div>
+              <div class="carousel slides">
                 <picture>
                   <source srcset="https://i.ibb.co/cbmtjTQ/Naomi-interview.png" media="(max-width: 767px)">
                   <img src="https://i.ibb.co/5x5b0kJ/Naomi-interview-2x.png" alt="Naomi interview notes">
                 </picture>
               </div>
-              <button id="prevbtn2">Prev</button>
-              <button id="nextbtn2">Next</button>
-            </div>
+                <a class="prev" onclick="plusslides(-1)">&#10094;</a>
+                <a class="next" onclick="plusslides(1)">&#10095;</a>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentslide(1)"></span>
+                  <span class="dot" onclick="currentslide(2)"></span>
+                  <span class="dot" onclick="currentslide(3)"></span>
+                </div>
           </div>
           <div class="column">
             <h4> Key Takeaways</h4>
             <p>From the user interviews, it was evident that users need a simple app that was more personalised and geared towards their holiday needs.</p>
             <p>Users also usually studied in 10-15 minute windows on language learning apps. This provided an upper limit for a typically lesson duration. </p>
           </div>
-        </div>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <h5>DEFINE</h5>
+        <span>DEFINE</span>
         <h2>IDENTIFYING MY KEY USERS AND THEIR GOALS</h2>
         <p>Armed with the research and data from the empathize stage, I was able to create a primary persona of the user that would have the most impact on the app.</p>
         <p>This allowed me to better understand the user’s needs, behaviours, and goals.</p>
@@ -172,7 +196,7 @@
     </div>
     <div class="section">
       <div class="container">
-        <h5>IDEATE</h5>
+        <span>IDEATE</span>
         <h2>OUTLINING THE JOURNEYS USERS TAKE TO ACHIEVE THEIR GOALS</h2>
         <p>I utilised task analysis and created user flows in order to define the information architecture of the app.</p>
         <p>Through task analysis, I identified the common steps that would be required to perform and complete specific tasks within the app. I then built user flows to visualise exactly the path my users would take.</p>
@@ -193,8 +217,8 @@
               <img src="https://i.ibb.co/RBGFNB7/user-flow-1-2x.png" alt="User flow 1">
             </picture>
             <picture>
-              <source srcset="https://i.ibb.co/Lpn1YQf/user-flow-2.png" media="(max-width: 767px)">
-              <img src="https://i.ibb.co/z6mqktJ/KFwNtzL/user-flow-2-2x.png" alt="User flow 2">
+              <source srcset="img/hp-img/user-flow2.png" media="(max-width: 767px)">
+              <img src="img/hp-img/user-flow2@2x.png" alt="User flow 2">
             </picture>
           </div>
         </div>
@@ -202,7 +226,7 @@
     </div>
     <div class="section">
       <div class="container">
-        <h5>PROTOTYPE</h5>
+        <span>PROTOTYPE</span>
         <h2>CREATING VISUAL BLUEPRINTS OF MY PRODUCT</h2>
         <p>With a firm understanding of the problem, my users, the steps required to perform specific tasks and the routes my users would take, I was now able to start rapid prototyping. A small sample of screens are shared below.</p>
         <h3>Low-high-fidelity prototypes</h3>
@@ -245,7 +269,7 @@
     </div>
     <div class="section">
       <div class="container">
-        <h5>TEST</h5>
+        <span>TEST</span>
         <h2>UNDERSTANDING HOW PEOPLE INTERACT WITH MY PRODUCT</h2>
         <div class="row">
           <div class="column">
@@ -321,7 +345,7 @@
     </div>
     <div class="section">
       <div class="container">
-        <h1>Project Retrospective</h1>
+        <h2>Project Retrospective</h2>
         <p>Overall, I had a lot of fun creating HoliPrep and it’s been nice looking back at the journey - starting from a blank sheet to a clickable prototype.</p>
         <div class="row">
           <div class="column">
@@ -346,6 +370,10 @@
             <p>Solution: Keep up to date with UI best practices and trends to develop a living mood board of inspiration.</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
         <h2>Key Takeaway</h2>
         <p>It’s impossible to create the perfect solution on the first attempt and the power of iterative prototyping and usability testing in the design thinking process should not be underestimated.</p>
         <div class="row">
@@ -374,17 +402,20 @@
     <div class="container">
       <h2>Get in touch</h2>
       <p>I’m always happy to receive feedback on my designs so let me know what you think and get in touch if you’d like to work together!</p>
-      <div class="r">
-        <a href="mailto:roland.emojevbe@outlook.com">Email me</a>
-      </div>
-      <div class="">
+      <picture>
+        <source srcset="img/home-page-images/footer-arrow.png" media="(max-width: 767px)">
+        <img src="img/home-page-images/footer-arrow@2x.png" alt="Arrow to Scoials">
+      </picture>
+      <div class="social">
         <ul>
+          <li><a href="mailto:roland.emojevbe@outlook.com" target="_blank"> <i class="fas fa-envelope"></i></a></li>
           <li><a href="https://www.linkedin.com/in/roland-emojevbe/" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.behance.net/rolandemojevbe" target="_blank"> <i class="fab fa-behance"></i> </a></li>
+          <li><a href="https://www.behance.net/rolandemojevbe" target="_blank"> <i class="fab fa-behance"></i> </a>
+          <li>
         </ul>
       </div>
-      <div class="">
-        <p>copy right roland emojevbe</p>
+      <div class="colophon">
+        <p>© Roland Emojevbe 2021</p>
       </div>
     </div>
   </footer>

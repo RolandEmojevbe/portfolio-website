@@ -4,7 +4,12 @@
 <head>
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> About - Roland Emojevbe User Experience Product Designer London </title>
   <script src="https://kit.fontawesome.com/d5135120e2.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +17,7 @@
 <body>
   <header>
     <div class="container">
-      <img src="https://i.ibb.co/dMmmRLJ/REUX-2x.png" alt="REUX">
+      <img src="img/logo.png" alt="REUX">
       <nav>
         <ul>
           <li><a href="index.html">Portfolio</a></li>
@@ -26,18 +31,24 @@
   <main>
     <div class="section">
       <div class="container">
-        <h1>Management Consultant turned UX/UI/Product Designer</h1>
+        <div class="row">
+          <div class="column">
+            <picture>
+              <source srcset="img/about-page-images/me.png" media="(max-width: 767px)">
+              <img src="img/about-page-images/me.png" alt="Roland Emojevbe Photo">
+            </picture>
+          </div>
+          <div class="column">
+            <p>Currently leveraging transferable management consulting capabilities to <span>make users lives better</span>, one experience at a time.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <picture>
-          <source srcset="https://i.ibb.co/RBTVf3n/Rectangle-1871.png" media="(max-width: 767px)">
-          <img src="https://i.ibb.co/mRc8jW6/Rectangle-1871-2x.png" alt="Roland Emojevbe Photo">
-        </picture>
         <div class="row">
           <div class="column">
-            <h2>Hi, I'm Roland</h2>
+            <h1>Hi, I'm Roland</h1>
             <p>My experience has always focused on solving problems and using data to help businesses develop their strategies. This problem-solving mindset is what has led me to user experience design. Going a step further, beyond business wants, to
               satisfy customer and user needs.</p>
             <p>I offer a lot of experience in interpersonal relationship building, communicating with a variety of stakeholders and a passion for creating intuitive and beautiful designs. I’m ready to utilise my creative skills on a day-to-day basis,
@@ -47,28 +58,24 @@
           </div>
           <div class="column">
             <h2>Skills & Tools</h2>
-            <div class="coloumn">
-              <h3>Relevant Skills</h3>
-              <ul>
-                <li>User Research (Competitor Analysis, Personas, User Interviews, Usability Testing)</li>
-                <li>User Flows, wireframing and prototyping</li>
-                <li>Problem Solving</li>
-                <li>Design thinking and Principles</li>
-                <li>UI Design, style guide creation and management</li>
-                <li>Adobe XD, Figma, Sketch, HTML</li>
-              </ul>
-            </div>
-            <div class="column">
-              <h3>Tools I use</h3>
-              <ul>
-                <li>Adobe XD</li>
-                <li>Adobe Photoshop</li>
-                <li>Sketch</li>
-                <li>Figma</li>
-                <li>Word, Excel, PowerPoint and other Microsoft Office Suite</li>
-                <li>Confluence, Jira</li>
-              </ul>
-            </div>
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>User Research (Competitor Analysis, Personas, User Interviews, Usability Testing)</li>
+              <li>User Flows, wireframing and prototyping</li>
+              <li>Problem Solving</li>
+              <li>Design thinking and Principles</li>
+              <li>UI Design, style guide creation and management</li>
+              <li>HTML, CSS, Java script (coded this website)</li>
+            </ul>
+            <h3>Tools I use</h3>
+            <ul>
+              <li>Adobe Photoshop, XD,</li>
+              <li>Sketch</li>
+              <li>Figma</li>
+              <li>Word, Excel, PowerPoint and other Microsoft Office Suite</li>
+              <li>Confluence, Jira</li>
+              <li>Atom, Github</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -78,17 +85,20 @@
     <div class="container">
       <h2>Get in touch</h2>
       <p>I’m always happy to receive feedback on my designs so let me know what you think and get in touch if you’d like to work together!</p>
-      <div class="r">
-        <a href="mailto:roland.emojevbe@outlook.com">Email me</a>
-      </div>
-      <div class="">
+      <picture>
+        <source srcset="img/home-page-images/footer-arrow.png" media="(max-width: 767px)">
+        <img src="img/home-page-images/footer-arrow@2x.png" alt="Arrow to Scoials">
+      </picture>
+      <div class="social">
         <ul>
+          <li><a href="mailto:roland.emojevbe@outlook.com" target="_blank"> <i class="fas fa-envelope"></i></a></li>
           <li><a href="https://www.linkedin.com/in/roland-emojevbe/" target="_blank"> <i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.behance.net/rolandemojevbe" target="_blank"> <i class="fab fa-behance"></i> </a></li>
+          <li><a href="https://www.behance.net/rolandemojevbe" target="_blank"> <i class="fab fa-behance"></i> </a>
+          <li>
         </ul>
       </div>
-      <div class="">
-        <p>copy right roland emojevbe</p>
+      <div class="colophon">
+        <p>© Roland Emojevbe 2021</p>
       </div>
     </div>
   </footer>
