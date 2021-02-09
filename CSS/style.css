@@ -1,10 +1,12 @@
+/* my colours #002476 royal navy blue, real dark blue for main text #0D213B */
+
 body {
   background-color: #ffffff;
   font-family: 'poppins', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000
+  color: #0D213B;
 }
 
 h1, h2, h3, h4 {
@@ -30,23 +32,53 @@ h4 {
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 a {
   color: #ff7f50;
-  text-decoration: none
+  text-decoration: none;
 }
 
 a:visited {
   color: #ff7f50;
 }
 
-a:hover a:focus {
+a:hover, a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
 
 a:active {
-  color: #994c30
+  color: #994c30;
+}
+
+a.project-button {
+  color: #0D213B;
+  display: block;
+  background-color: #fff;
+  padding: 80px 15px;
+}
+
+a.project-button:hover, a.project-button:focus {
+  color: #fff;
+  background-color: #737373!important;
+  text-decoration: none
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.project .row {
+  margin: 0 -15px;
+}
+
+.project picture {
+  display: block;
+  line-height: 0;
+}
+
+footer .arrow {
+  display: none
 }
