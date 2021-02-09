@@ -1,12 +1,20 @@
-/* my colours #002476 royal navy blue, real dark blue for main text #0D213B */
+/* my colours #002476 royal navy blue for navigation active and get intouch header, real dark blue for main text #0D213B */
+
+*{
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   font-family: 'poppins', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #0D213B;
+}
+
+header {
+
 }
 
 h1, h2, h3, h4 {
@@ -23,12 +31,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 img {
@@ -36,12 +44,12 @@ img {
 }
 
 a {
-  color: #ff7f50;
+  color: #002476;
   text-decoration: none;
 }
 
 a:visited {
-  color: #ff7f50;
+  color: #002476;
 }
 
 a:hover, a:focus {
@@ -66,17 +74,38 @@ a.project-button:hover, a.project-button:focus {
   text-decoration: none
 }
 
-.container {
-  padding: 0 15px;
+.button {
+  display: inline-block;
+  background-color: #fff;
+  color: #002476;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 33px;
+  border: 2px solid #002476; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  margin-bottom: 25px;
 }
 
-.project .row {
-  margin: 0 -15px;
+.button:hover, a.button:focus {
+  color: #fff;
+  background-color: #737373;
+  text-decoration:none;
+  border: 2px solid #737373;
 }
 
 .project picture {
   display: block;
   line-height: 0;
+}
+
+/* Layour styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
 }
 
 footer .arrow {
