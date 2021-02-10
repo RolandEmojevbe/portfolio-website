@@ -14,7 +14,10 @@ body {
 }
 
 header {
-
+  background-color: #fff;
+text-align: center;
+box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -110,4 +113,42 @@ a.project-button:hover, a.project-button:focus {
 
 footer .arrow {
   display: none
+}
+
+.logo {
+  max-width: 50px;
+  text-align: left; /* help */
+}
+
+.hero {
+  background-color: #fff;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #fff;
+}
+
+.colophon {
+  background-color: #f2f2f2; /* should i just take this part out of the footer in the html so i can have it on a separate line with the background colour end to end? */
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav {
+  display: inline-block;
+}
+
+.navon {
+  font-weight: 700;
 }
