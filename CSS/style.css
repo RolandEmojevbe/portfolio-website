@@ -17,7 +17,8 @@ header {
   background-color: #fff;
 text-align: center;
 box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
-position: relative;
+position: fixed;
+width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -123,6 +124,7 @@ footer .arrow {
 .hero {
   background-color: #fff;
   padding: 10px 0;
+  padding-top: 150px;
   display: inline-block;
   width: 100%;
 }
@@ -151,4 +153,51 @@ nav {
 
 .navon {
   font-weight: 700;
+}
+
+/*================================
+medium devices (640px or larger)
+==================================*/
+@media only screen and (min-width: 640px) {
+header {text-align: unset;
+}
+nav {
+  width: auto;
+  float: right;
+  margin-top: 30px
+}
+.hero {
+  padding-top: 100px;
+}
+body {
+  font-size: 18px;
+}
+.hero span{
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  width: 400px;
+}
+.hero span-about{
+  font-size: 22px;
+  font-weight: 500;
+}
+.col-md-6 {
+  width: 33%;
+}
+}
+
+/*================================
+large devices (1024px or larger)
+==================================*/
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* =========================
+x-large devices (1440px or larger)
+=================================*/
+
+@media only screen and (min-width: 1440px) {
+
 }
