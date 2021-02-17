@@ -69,7 +69,7 @@ a.project-button {
   color: #0D213B;
   display: block;
   background-color: #fff;
-  padding: 80px 15px;
+  padding: 10px 15px;
 }
 
 a.project-button:hover, a.project-button:focus {
@@ -86,7 +86,7 @@ a.project-button:hover, a.project-button:focus {
   padding: 10px 15px;
   border-radius: 33px;
   border: 2px solid #002476; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 2s opacity;
   margin-bottom: 25px;
 }
 
@@ -95,14 +95,19 @@ a.project-button:hover, a.project-button:focus {
   background-color: #737373;
   text-decoration:none;
   border: 2px solid #737373;
-}
+  opacity: 0.8
+} /* how do i change so it goes from white to dark slowly rather than quickly dark and slowly lighter */
 
 .project picture {
   display: block;
   line-height: 0;
 }
 
-/* Layour styling */
+.hero span-about{
+  font-weight: 700;
+}
+
+/* Layout styling */
 
 .container {
   padding: 0 15px;
@@ -131,6 +136,7 @@ footer .arrow {
 
 footer {
   background-color: #fff;
+  padding: 10px 0;
 }
 
 .colophon {
@@ -178,12 +184,37 @@ body {
   font-weight: 400;
   width: 400px;
 }
-.hero span-about{
-  font-size: 22px;
-  font-weight: 500;
-}
 .col-md-6 {
-  width: 33%;
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button-text {
+  padding: 0 10px; /* cant get the text in the middle of the button */
+}
+a.project-button {
+  padding: 119px 0px;
+}
+.about-hero-text {
+  padding: 10px;
+}
+.main-about-text {
+  background-color: #fff;
+  padding: 0 30px;
+}
+.col-md-7 {
+ width: 55%;
+}
+.col-md-4 {
+ width: 40%;
+ padding: 0 15px;
+ padding-top: 30px;
 }
 }
 
@@ -191,7 +222,18 @@ body {
 large devices (1024px or larger)
 ==================================*/
 @media only screen and (min-width: 1024px) {
-
+.col-md-7 {
+  width: 55%;
+  padding: 30px;
+}
+.about-hero-text {
+  font-size: 30px;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 /* =========================
@@ -200,4 +242,23 @@ x-large devices (1440px or larger)
 
 @media only screen and (min-width: 1440px) {
 
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
 }
