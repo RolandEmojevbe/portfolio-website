@@ -110,7 +110,8 @@ a.project-button:hover, a.project-button:focus {
 .hero-text {
   background-color: #071428;
   color: #fff;
-  padding-top: 200px; /*not working */
+  padding-bottom: 200px; /*not working */
+  text-align: center;
 }
 .span-hp {
   padding: 200px 0; /*not working */
@@ -184,8 +185,6 @@ nav {
   padding: 0 7px;
 }
 
-
-
 .navon {
   font-weight: 700;
 }
@@ -193,7 +192,13 @@ nav {
 .white {
   background-color: #fff;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 50px;
+}
+
+.white- {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .column span-bold {
@@ -206,8 +211,18 @@ nav {
   padding-top: 20px;
   padding-bottom: 0;
 }
-.column picture-icon {
+.col-md-3 {
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+}
+.col-md-3 picture {
   max-width: 10px; /* how do i reduce size of pictures */
+}
+.retro {
+  background-color: #fff;
+  padding: 1px 10px;
+  margin: 10px 0;
 }
 /*================================
 medium devices (640px or larger)
@@ -250,19 +265,31 @@ a.project-button {
   padding: 119px 0px;
 }
 .about-hero-text {
-  padding: 10px;
+  padding: 20px;
 }
 .main-about-text {
   background-color: #fff;
   padding: 0 30px;
 }
-.col-md-7 {
+.col-md-7 { /*not showing on project carousel slides */
  width: 55%;
 }
 .col-md-4 {
  width: 40%;
  padding: 0 15px;
  padding-top: 30px;
+}
+.col-md-6text {
+  width: 50%;
+  padding-right: 30px;
+}
+.col-md-3 {
+  width: 30%;
+}
+.retro {
+  width: 31%;
+  float: left;
+  margin: 0 5px; /*how do i get background colour to end on the same line */
 }
 }
 
