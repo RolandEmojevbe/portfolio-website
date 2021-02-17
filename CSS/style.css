@@ -107,6 +107,15 @@ a.project-button:hover, a.project-button:focus {
   font-weight: 700;
 }
 
+.hero-text {
+  background-color: #071428;
+  color: #fff;
+  padding-top: 200px; /*not working */
+}
+.span-hp {
+  padding: 200px 0; /*not working */
+}
+
 /* Layout styling */
 
 .container {
@@ -123,24 +132,32 @@ footer .arrow {
 
 .logo {
   max-width: 50px;
-  text-align: left; /* help */
+  text-align: left;
 }
 
 .hero {
   background-color: #fff;
   padding: 10px 0;
-  padding-top: 150px;
+  padding-top: 120px;
   display: inline-block;
   width: 100%;
 }
 
+.hero span{
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 footer {
   background-color: #fff;
-  padding: 10px 0;
+  padding-top: 10px;
 }
 
 .colophon {
-  background-color: #f2f2f2; /* should i just take this part out of the footer in the html so i can have it on a separate line with the background colour end to end? */
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 1px;
 }
 
 nav > ul {
@@ -150,17 +167,48 @@ nav > ul {
 
 nav > ul > li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 7px;
 }
 
 nav {
   display: inline-block;
 }
 
+.social > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social > ul > li {
+  display: inline-block;
+  padding: 0 7px;
+}
+
+
+
 .navon {
   font-weight: 700;
 }
 
+.white {
+  background-color: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.column span-bold {
+  font-weight: 600;
+}
+
+.container-small-header {
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.column picture-icon {
+  max-width: 10px; /* how do i reduce size of pictures */
+}
 /*================================
 medium devices (640px or larger)
 ==================================*/
