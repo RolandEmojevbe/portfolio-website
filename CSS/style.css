@@ -3,6 +3,8 @@
 *{
   box-sizing: border-box;
 }
+html {
+scroll-behavior: smooth;}
 
 body {
   background-color: #F2F2F2;
@@ -110,8 +112,9 @@ a.project-button:hover, a.project-button:focus {
 .hero-text {
   background-color: #071428;
   color: #fff;
-  padding-bottom: 200px; /*not working */
+  padding: 10px;
   text-align: center;
+  margin-top: 0px
 }
 .span-hp {
   padding: 200px 0; /*not working */
@@ -136,6 +139,9 @@ footer .arrow {
   text-align: left;
 }
 
+main {
+  padding-top: 0px;
+}
 .hero {
   background-color: #fff;
   padding: 10px 0;
@@ -148,6 +154,10 @@ footer .arrow {
   display: block;
   font-size: 15px;
   font-weight: 400;
+}
+
+.project-page .hero picture {
+  display: flex;
 }
 
 footer {
@@ -247,6 +257,7 @@ body {
   font-weight: 400;
   width: 400px;
 }
+
 .col-md-6 {
   width: 50%;
 }
