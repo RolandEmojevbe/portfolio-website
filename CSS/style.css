@@ -88,7 +88,7 @@ a.project-button:hover, a.project-button:focus {
   padding: 10px 15px;
   border-radius: 33px;
   border: 2px solid #002476; /* width of the border, type, color */
-  transition: 2s opacity;
+  transition: 2s background-color;
   margin-bottom: 25px;
 }
 
@@ -97,8 +97,7 @@ a.project-button:hover, a.project-button:focus {
   background-color: #737373;
   text-decoration:none;
   border: 2px solid #737373;
-  opacity: 0.8
-} /* how do i change so it goes from white to dark slowly rather than quickly dark and slowly lighter */
+}
 
 .project picture {
   display: block;
@@ -116,14 +115,14 @@ a.project-button:hover, a.project-button:focus {
   text-align: center;
   margin-top: 0px
 }
-.span-hp {
-  padding: 200px 0; /*not working */
-}
 
 /* Layout styling */
 
 .container {
   padding: 0 15px;
+}
+.hero-text {
+  padding: 20px;
 }
 
 .row {
@@ -225,9 +224,11 @@ nav {
   padding: 10px;
   background-color: #fff;
   margin: 10px;
+  text-align: center;
 }
-.col-md-3 picture {
-  max-width: 10px; /* how do i reduce size of pictures */
+.col-md-3 img {
+  max-width: 100px; /* how do i reduce size of pictures */
+  text-align: center;
 }
 .retro {
   background-color: #fff;
@@ -244,6 +245,10 @@ nav {
   width: auto;
   float: right;
   margin-top: 30px
+}
+nav > ul > li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .hero {
   padding-top: 100px;
@@ -273,7 +278,8 @@ body {
   padding: 0 10px; /* cant get the text in the middle of the button */
 }
 a.project-button {
-  padding: 119px 0px;
+  align-items: center;
+  display: flex;
 }
 .about-hero-text {
   padding: 20px;
@@ -295,12 +301,16 @@ a.project-button {
   padding-right: 30px;
 }
 .col-md-3 {
-  width: 30%;
+  width: 33.33%;
 }
 .retro {
   width: 31%;
   float: left;
   margin: 0 5px; /*how do i get background colour to end on the same line */
+}
+
+.flex {
+  display: flex;
 }
 }
 
@@ -319,6 +329,15 @@ large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.carousel img {
+  width: 700px;
+}
+.task img {
+  width: 800px;
+}
+.task {
+  text-align: center;
 }
 }
 
