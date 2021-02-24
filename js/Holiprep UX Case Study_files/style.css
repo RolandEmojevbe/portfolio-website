@@ -258,18 +258,8 @@ nav {
   padding-top: 30px;
 }
 
-.navtoggle.responsive li {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
+
 .navtoggle.responsive nav {
-  background-color: #fff;
-  padding: 100px;
-  padding-bottom: 0;
-  padding-top: 0;
 }
 
 /*================================
