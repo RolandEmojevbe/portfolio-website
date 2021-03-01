@@ -9,10 +9,10 @@ function menuToggle() {
   }
 }
 
-//slideshow
+//2.0
 var slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["slides1", "slides2", "slides3"]
+var slideId = ["mySlides1", "mySlides2", "mySlides3" ]
 showSlides(1, 0);
 showSlides(1, 1);
 
