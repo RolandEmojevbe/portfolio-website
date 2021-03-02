@@ -40,8 +40,8 @@ h3 {
   font-weight: 500;
 }
 h4 {
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 0.9em;
+  font-weight: 700;
 }
 
 img {
@@ -208,8 +208,12 @@ nav {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-.column span-bold {
+.grey {
+  background-color: #EDF1F4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+span-bold {
   font-weight: 600;
 }
 
@@ -282,7 +286,7 @@ nav {
 }
 
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
   display: none;
 }
 
