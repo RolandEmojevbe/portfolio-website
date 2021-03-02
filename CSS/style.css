@@ -272,7 +272,7 @@ nav {
   padding-top: 0;
 }
 
-* {box-sizing:border-box}
+* {box-sizing: border-box;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -282,7 +282,7 @@ nav {
 }
 
 /* Hide the images by default */
-.mySlides1 {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
   display: none;
 }
 
@@ -474,6 +474,9 @@ large devices (1024px or larger)
 }
 .carousel img {
   width: 700px;
+}
+.space {
+  padding-top: 50px;
 }
 }
 
