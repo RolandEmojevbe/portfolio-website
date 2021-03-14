@@ -1,33 +1,46 @@
 /* my colours #002476 royal navy blue for navigation active and get intouch header, real dark blue for main text #0D213B */
-
-*{
+* {
   box-sizing: border-box;
 }
+
 html {
-scroll-behavior: smooth;}
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-family: 'poppins', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #0D213B;
+  font-size: 16px;
+
+  /* Sets the font size to 16px */
+  font-weight: 300;
+
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #0d213b;
 }
 
 header {
   background-color: #fff;
-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
-position: fixed;
-width: 100%;
-z-index: 99999; /*makes it on top of other content - levels */
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+
+  /* makes it on top of other content - levels */
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.0em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -40,6 +53,7 @@ h3 {
   font-size: 1.1em;
   font-weight: 500;
 }
+
 h4 {
   font-size: 0.9em;
   font-weight: 700;
@@ -58,7 +72,8 @@ a:visited {
   color: #002476;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
@@ -68,16 +83,17 @@ a:active {
 }
 
 a.project-button {
-  color: #0D213B;
+  color: #0d213b;
   display: block;
   background-color: #fff;
   padding: 10px 15px;
 }
 
-a.project-button:hover, a.project-button:focus {
+a.project-button:hover,
+a.project-button:focus {
   color: #fff;
-  background-color: #737373!important;
-  text-decoration: none
+  background-color: #737373 !important;
+  text-decoration: none;
 }
 
 .button {
@@ -87,15 +103,18 @@ a.project-button:hover, a.project-button:focus {
   font-weight: 400;
   padding: 10px 15px;
   border-radius: 33px;
-  border: 2px solid #002476; /* width of the border, type, color */
+  border: 2px solid #002476;
+
+  /* width of the border, type, color */
   transition: 2s background-color;
   margin-bottom: 25px;
 }
 
-.button:hover, a.button:focus {
+.button:hover,
+a.button:focus {
   color: #fff;
   background-color: #737373;
-  text-decoration:none;
+  text-decoration: none;
   border: 2px solid #737373;
 }
 
@@ -104,7 +123,7 @@ a.project-button:hover, a.project-button:focus {
   line-height: 0;
 }
 
-.hero span-about{
+.about-hero-text span-about {
   font-weight: 700;
 }
 
@@ -113,14 +132,14 @@ a.project-button:hover, a.project-button:focus {
   color: #fff;
   padding: 10px;
   text-align: center;
-  margin-top: 0px
+  margin-top: 0;
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
+
 .hero-text {
   padding: 20px;
 }
@@ -130,7 +149,7 @@ a.project-button:hover, a.project-button:focus {
 }
 
 footer .arrow {
-  display: none
+  display: none;
 }
 
 .logo {
@@ -138,8 +157,9 @@ footer .arrow {
 }
 
 main {
-  padding-top: 0px;
+  padding-top: 0;
 }
+
 .hero {
   background-color: #fff;
   padding: 10px 0;
@@ -148,7 +168,7 @@ main {
   width: 100%;
 }
 
-.hero span{
+.hero span {
   display: block;
   font-size: 15px;
   font-weight: 400;
@@ -209,11 +229,13 @@ nav {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .grey {
-  background-color: #EDF1F4;
+  background-color: #edf1f4;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 span-bold {
   font-weight: 600;
 }
@@ -224,25 +246,30 @@ span-bold {
   padding-top: 20px;
   padding-bottom: 0;
 }
+
 .col-md-3 {
   padding: 10px;
   background-color: #fff;
   margin: 10px;
   text-align: center;
 }
+
 .col-md-3 img {
-  max-width: 100px; /* how do i reduce size of pictures */
+  max-width: 100px;
   text-align: center;
 }
+
 .retro {
   background-color: #fff;
   padding: 1px 10px;
   margin: 10px 0;
 }
+
 .flex {
   display: flex;
   flex-direction: column;
 }
+
 .flex.reverse {
   flex-direction: column-reverse;
 }
@@ -251,9 +278,11 @@ span-bold {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -270,6 +299,7 @@ span-bold {
   margin-right: auto;
   padding-bottom: 10px;
 }
+
 .navtoggle.responsive nav {
   background-color: #fff;
   padding: 100px;
@@ -277,7 +307,9 @@ span-bold {
   padding-top: 0;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -287,12 +319,17 @@ span-bold {
 }
 
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5 {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -314,8 +351,9 @@ span-bold {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -350,7 +388,8 @@ span-bold {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -363,161 +402,218 @@ span-bold {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 picture.end {
   display: block;
   line-height: 0;
 }
-/*================================
+
+li {
+  padding-bottom: 20px;
+}
+
+.special li {
+  padding-bottom: 0;
+}
+
+/* ================================
 medium devices (640px or larger)
-==================================*/
+================================== */
 @media only screen and (min-width: 640px) {
-header {text-align: unset;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 30px
-}
-nav > ul > li {
-  padding-left: 20px;
-  padding-right: 20px;
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 30px;
+  }
+
+  nav > ul > li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .hero span {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    width: 400px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .button-text {
+    padding: 0 10px;
+
+    /* cant get the text in the middle of the button */
+  }
+
+  a.project-button {
+    align-items: center;
+    display: flex;
+  }
+
+  .about-hero-text {
+    padding: 20px;
+  }
+
+  .main-about-text {
+    background-color: #fff;
+    padding: 0 30px;
+  }
+
+  .col-md-7 {
+    /* not showing on project carousel slides */
+    width: 55%;
+  }
+
+  .col-md-4 {
+    width: 40%;
+    padding: 0 15px;
+    padding-top: 30px;
+  }
+
+  .col-md-6text {
+    width: 50%;
+    padding-right: 30px;
+  }
+
+  .col-md-3 {
+    width: 33.33%;
+  }
+
+  .retro {
+    width: 31%;
+    float: left;
+    margin: 0 5px;
+
+    /* how do i get background colour to end on the same line */
+  }
+
+  .flex,
+  .flex.reverse {
+    flex-direction: row;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    background-color: #fff;
+    padding: 0;
+  }
+
+  .problem4 {
+    position: relative;
+  }
+
+  .problem4 p {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    max-width: 47%;
+  }
+
+  .preference h4 {
+    margin-top: 100px;
+  }
 }
 
-body {
-  font-size: 18px;
-}
-.hero span{
-  display: block;
-  font-size: 22px;
-  font-weight: 400;
-  width: 400px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.button-text {
-  padding: 0 10px; /* cant get the text in the middle of the button */
-}
-a.project-button {
-  align-items: center;
-  display: flex;
-}
-.about-hero-text {
-  padding: 20px;
-}
-.main-about-text {
-  background-color: #fff;
-  padding: 0 30px;
-}
-.col-md-7 { /*not showing on project carousel slides */
- width: 55%;
-}
-.col-md-4 {
- width: 40%;
- padding: 0 15px;
- padding-top: 30px;
-}
-.col-md-6text {
-  width: 50%;
-  padding-right: 30px;
-}
-.col-md-3 {
-  width: 33.33%;
-}
-.retro {
-  width: 31%;
-  float: left;
-  margin: 0 5px; /*how do i get background colour to end on the same line */
-}
-.flex, .flex.reverse {
-  flex-direction: row;
-}
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-.navtoggle.responsive nav {
-  background-color: #fff;
-  padding: 0px;
-}
-.problem4{
-  position: relative;
-}
-.problem4 p {
-  position: absolute;
-  top: 24px;
-  right: 0;
-  max-width: 47%;
-}
-.preference h4{
-  margin-top: 100px;
-}
-}
-
-/*================================
+/* ================================
 large devices (1024px or larger)
-==================================*/
+================================== */
 @media only screen and (min-width: 1024px) {
-.col-md-7 {
-  width: 55%;
-  padding: 30px;
-}
-.about-hero-text {
-  font-size: 30px;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.carousel img {
-  width: 700px;
-}
-.space {
-  padding-top: 50px;
-}
-.small img{
-  max-width: 70%;
-}
-picture.small {
-  display: block;
-  text-align: center;
-}
+  .col-md-7 {
+    width: 55%;
+    padding: 30px;
+  }
+
+  .about-hero-text {
+    font-size: 30px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel img {
+    width: 700px;
+  }
+
+  .space {
+    padding-top: 50px;
+  }
+
+  .small img {
+    max-width: 70%;
+  }
+
+  picture.small {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* =========================
 x-large devices (1440px or larger)
-=================================*/
+================================= */
+@media only screen and (min-width: 1440px)
 
-@media only screen and (min-width: 1440px) {
+  @keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
 
-}
+  50% {
+    fill: #fcffad;
+  }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -525,8 +621,13 @@ x-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
