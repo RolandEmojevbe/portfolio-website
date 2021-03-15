@@ -434,6 +434,15 @@ li {
   padding-bottom: 0;
 }
 
+@keyframes color-change {
+  from { fill: #edc655; }
+  to { fill: #f76414; }
+}
+
+.svg {
+  display: none;
+}
+
 /* ================================
 medium devices (640px or larger)
 ================================== */
@@ -597,6 +606,10 @@ large devices (1024px or larger)
   }
 }
 
+.svg {
+  display: inline-block;
+}
+
 /* =========================
 x-large devices (1440px or larger)
 ================================= */
@@ -614,6 +627,10 @@ x-large devices (1440px or larger)
   100% {
     fill: #f76414;
   }
+}
+
+.chair {
+  animation: 4s color-change infinite alternate linear;
 }
 
 .sun {
