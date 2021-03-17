@@ -63,6 +63,10 @@ img {
   width: 100%;
 }
 
+.space img{
+  width: 95%;
+}
+
 a {
   color: #002476;
   text-decoration: none;
@@ -172,6 +176,11 @@ main {
   display: block;
   font-size: 15px;
   font-weight: 400;
+}
+
+.col-md-6text span {
+  display: inline-block;
+  font-weight: 700;
 }
 
 .project-page .hero picture {
@@ -423,6 +432,23 @@ li {
   font-weight: 700;
 }
 
+.col-md-6 span {
+  font-weight: 700;
+}
+
+.problem4 span {
+  font-weight: 700;
+}
+
+.container span {
+  font-weight: 700;
+}
+
+.tiny {
+  max-width: 20%;
+  display: block;
+}
+
 /* ================================
 medium devices (640px or larger)
 ================================== */
@@ -552,6 +578,12 @@ medium devices (640px or larger)
   .svg {
     display: inline-block;
     text-align: center;
+  }
+
+  .col-md-6text span {
+    display: inline;
+    font-weight: 700;
+    font-size: 1em;
   }
 
   .about-hero-text span {
