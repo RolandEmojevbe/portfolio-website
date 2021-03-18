@@ -63,6 +63,10 @@ img {
   width: 100%;
 }
 
+video {
+  width: 100%;
+}
+
 .space img{
   width: 95%;
 }
@@ -449,6 +453,20 @@ li {
   display: block;
 }
 
+.code span {
+  text-align: center;
+  display: block;
+}
+
+.pad {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.linespace span {
+  font-weight: 400;
+}
+
 /* ================================
 medium devices (640px or larger)
 ================================== */
@@ -595,6 +613,9 @@ medium devices (640px or larger)
     line-height: 40px;
   }
 
+  .ctext {
+    text-align: center;
+  }
 }
 
 /* ================================
