@@ -63,11 +63,7 @@ img {
   width: 100%;
 }
 
-video {
-  width: 100%;
-}
-
-.space img{
+.space img {
   width: 95%;
 }
 
@@ -699,4 +695,9 @@ x-large devices (1440px or larger)
 
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
+}
+
+video {
+  width: 100%;
+  object-fit: scale-down;
 }
